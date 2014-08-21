@@ -1,0 +1,7 @@
+source("cachematrix.R")
+x <- makeCacheMatrix(matrix(c(1,2,3,1),nrow=2, ncol=2))
+x$get()                     
+y <- cacheSolve(x)
+print(y)
+z <- cacheSolve(x)
+print(z)
